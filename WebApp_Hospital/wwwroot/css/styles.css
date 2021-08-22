@@ -1,0 +1,9 @@
+﻿body {
+}
+
+.prueba {
+    background: url('assets/img/2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+

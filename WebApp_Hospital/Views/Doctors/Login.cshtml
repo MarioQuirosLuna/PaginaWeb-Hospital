@@ -1,0 +1,42 @@
+﻿@model WebApp_Hospital.Models.Doctor
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutLogin";
+}
+
+<div class="row col-12 mt-5">
+    <div class="container justify-content-center text-center mt-5">
+        <div class="col-md-5 m-auto">
+            <h1>Login</h1>
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Doctor_identification_card" class="col-form-label">Identify Card Number</label>
+                    <input asp-for="Doctor_identification_card" id="Doctor_identification_card" class="form-control" required />
+                    <span asp-validation-for="Doctor_identification_card" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Doctor_code" class="col-form-label">Doctor Number</label>
+                    <input asp-for="Doctor_code" id="numberDoctor" class="form-control" required />
+                    <span asp-validation-for="Doctor_code" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Doctor_password" class="col-form-label">Password</label>
+                    <input asp-for="Doctor_password" type="password" id="passwordDoctor" class="form-control" required />
+                    <span asp-validation-for="Doctor_password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="logIn" name="logIn" value="Log In" class="btn btn-primary" />
+                </div>
+                <div>
+                    <span id="result" class="text-danger"><strong>@ViewBag.ErrorLogin</strong></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

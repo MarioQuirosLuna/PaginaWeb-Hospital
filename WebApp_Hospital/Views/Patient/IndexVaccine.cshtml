@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebApp_Hospital.Models.Patient>
+
+@{
+    ViewData["Title"] = "IndexVacinne";
+}
+
+<h1>Patient</h1>
+
+<table class="table table-bordered border-primary align-content-center text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Patient Identification</th>
+            <th>Patient Name</th>
+            <th>Managment</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Patient_identification_card)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Patient_name)
+                </td>
+                <td>
+                    <a asp-controller="Vaccine" asp-action="Index" asp-route-id="@item.Patient_identification_card">Vaccine Managment</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,48 @@
+﻿@model WebApp_Hospital.Models.Vaccine
+
+@{
+    ViewData["Title"] = "DetailsVaccine";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vaccine</h4>
+    <hr />
+
+    <table class="table">
+        <tr>
+            <th>Patient Identification</th>
+            <td>@Html.DisplayFor(model => model.Fk_patient_identification_card)</td>
+        </tr>
+        <tr>
+            <th>Patient Name</th>
+            <td>@Html.DisplayFor(model => model.Patient_name)</td>
+        </tr>
+        <tr>
+            <th>Vaccine Name</th>
+            <td>@Html.DisplayFor(model => model.Vaccine_name)</td>
+        </tr>
+        <tr>
+            <th>Vaccine Description</th>
+            <td>@Html.DisplayFor(model => model.Vaccine_description)</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>@Html.DisplayFor(model => model.Date_time)</td>
+        </tr>
+        <tr>
+            <th>Next Dose Date</th>
+            <td>@Html.DisplayFor(model => model.Next_dose_date_time)</td>
+        </tr>
+        <tr>
+            <th>Clinic Name</th>
+            <td>@Html.DisplayFor(model => model.Clinic_name)</td>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index" asp-route-id="@Model.Fk_patient_identification_card">Back to List</a>
+</div>

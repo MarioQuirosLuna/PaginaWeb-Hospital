@@ -1,0 +1,44 @@
+﻿@model WebApp_Hospital.Models.Allergy
+
+@{
+    ViewData["Title"] = "DetailsAllergy";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Allergy</h4>
+    <hr />
+
+    <table class="table">
+        <tr>
+            <th>Patient Identification</th>
+            <td>@Html.DisplayFor(model => model.Fk_patient_identification_card)</td>
+        </tr>
+        <tr>
+            <th>Patient Name</th>
+            <td>@Html.DisplayFor(model => model.Patient_name)</td>
+        </tr>
+        <tr>
+            <th>Allergy Name</th>
+            <td>@Html.DisplayFor(model => model.Allergy_name)</td>
+        </tr>
+        <tr>
+            <th>Allergy Description</th>
+            <td>@Html.DisplayFor(model => model.Allergy_description)</td>
+        </tr>
+        <tr>
+            <th>Diagnosis Date</th>
+            <td>@Html.DisplayFor(model => model.Diagnosis_date_time)</td>
+        </tr>
+        <tr>
+            <th>Medicine</th>
+            <td>@Html.DisplayFor(model => model.Medicine)</td>
+        </tr>
+    </table>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index" asp-route-id="@Model.Fk_patient_identification_card">Back to List</a>
+</div>

@@ -1,0 +1,50 @@
+﻿@model WebApp_Hospital.Models.Allergy
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Allergy</h4>
+    <hr />
+    <table class="table">
+        <tr>
+            <th>Patient Identification</th>
+            <td>@Html.DisplayFor(model => model.Fk_patient_identification_card)</td>
+        </tr>
+        <tr>
+            <th>Patient Name</th>
+            <td>@Html.DisplayFor(model => model.Patient_name)</td>
+        </tr>
+        <tr>
+            <th>Allergy Name</th>
+            <td>@Html.DisplayFor(model => model.Allergy_name)</td>
+        </tr>
+        <tr>
+            <th>Allergy Description</th>
+            <td>@Html.DisplayFor(model => model.Allergy_description)</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>@Html.DisplayFor(model => model.Diagnosis_date_time)</td>
+        </tr>
+        <tr>
+            <th>Medicine</th>
+            <td>@Html.DisplayFor(model => model.Medicine)</td>
+        </tr>
+    </table>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Fk_patient_identification_card" />
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Medicine" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" asp-route-id="@Model.Fk_patient_identification_card">Back to List</a>
+    </form>
+    <br />
+</div>
+
+

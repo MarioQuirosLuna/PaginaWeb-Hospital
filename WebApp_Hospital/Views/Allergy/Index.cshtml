@@ -1,0 +1,44 @@
+﻿@model List<WebApp_Hospital.Models.Allergy>
+
+@{
+    ViewData["Title"] = "IndexAllergy";
+}
+
+<h1>Allergy</h1>
+
+<p>
+    <a class="btn btn-outline-dark" asp-action="Create" asp-route-id="@ViewBag.IdPatient">Create New</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered border-primary align-content-center text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Patient Name</th>
+                <th>Allergy Name</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Patient_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Allergy_name)
+                    </td>
+                    <td>
+                        <a class="mr-3" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a class="mr-3" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a class="mr-3" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <a asp-controller="Patient" asp-action="IndexAllergy">Back to List</a>
+</div>
