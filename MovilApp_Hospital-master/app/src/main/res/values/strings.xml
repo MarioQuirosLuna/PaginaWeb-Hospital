@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Hospital_MovilApp</string>
+    <string name="identification_placeholder">Identification</string>
+    <string name="password_placeholder">Password</string>
+    <string name="loginBtn">LogIn</string>
+    <string name="registerBtn">Register</string>
+    <string name="age_placeholder">Age</string>
+    <string name="blood_type_placeholder">Blood type</string>
+    <string name="civil_state_placeholder">Civil state</string>
+    <string name="telephone_placeholder">Telephone</string>
+    <string name="province_placeholder">Province</string>
+    <string name="canton_placeholder">Canton</string>
+    <string name="district_placeholder">District</string>
+    <string name="user_name_placeholder">User Name</string>
+    <string name="other_signs_placeholder">other signs</string>
+    <string name="update_placeholder">Update</string>
+    <string name="address_placeholder">Address</string>
+    <string name="clinic_name_placeholder">Clinic name</string>
+    <string name="date_time_placeholder">Date time</string>
+    <string name="doctor_code_placeholder">Doctor code</string>
+    <string name="doctor_name_placeholder">Doctor name</string>
+    <string name="speciality_placeholder">Speciality</string>
+    <string name="diagnosis_placeholder">Diagnosis</string>
+    <string name="id_placeholder">Id</string>
+    <string name="allergy_name_placeholder">Allergy name</string>
+    <string name="allergy_description_placeholder">Allergy description</string>
+    <string name="medicine_placeholder">Medicine</string>
+    <string name="vaccine_name_placeholder">Vaccine name</string>
+    <string name="vaccine_description_placeholder">Vaccine description</string>
+    <string name="next_datetime_placeholder">Next DateTime</string>
+    <string name="identification_required">Identification required*</string>
+    <string name="password_required">Password required*</string>
+    <string name="input_required">Required*</string>
+    <string name="identification_incorrect">Identification incorrect*</string>
+    <string name="password_incorrect">Password incorrect*</string>
+    <string name="no_data_placeholder">No data</string>
+</resources>

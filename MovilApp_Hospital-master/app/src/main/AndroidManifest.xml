@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cr.ac.ucr.movilapp_hospital">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logohospital"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logohospital"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.DetailsVaccineActivity"></activity>
+        <activity android:name=".Activities.ShowVaccineActivity" />
+        <activity android:name=".Activities.DetailsAllergyActivity" />
+        <activity android:name=".Activities.ShowAllergyActivity" />
+        <activity android:name=".Activities.DetailsAppointmentActivity" />
+        <activity android:name=".Activities.ShowAppointmentsActivity" />
+        <activity android:name=".Activities.UpdatePatientActivity" />
+        <activity android:name=".Activities.DataPatientActivity" />
+        <activity android:name=".Activities.DashBoardActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcream"
+    tools:context=".Activities.DataPatientActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image_Data"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_user_data"
+            tools:srcCompat="@drawable/ic_user_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Patient_label_Identification_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/identification_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Identification_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction" />
+
+    <TextView
+        android:id="@+id/Patient_Identification_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/identification_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Identification_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction" />
+
+    <TextView
+        android:id="@+id/Patient_label_Name_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/user_name_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Name_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Identification_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Name_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/user_name_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Name_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Identification_Data" />
+
+    <TextView
+        android:id="@+id/Patient_label_Age_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/age_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Age_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Name_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Age_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/age_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Age_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Name_Data" />
+
+    <TextView
+        android:id="@+id/Patient_label_Blood_type_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/blood_type_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Blood_type_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Age_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Blood_type_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/blood_type_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Blood_type_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Age_Data" />
+
+    <TextView
+        android:id="@+id/Patient_label_Civil_State_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/civil_state_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Civil_State_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Blood_type_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Civil_State_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/civil_state_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Civil_State_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Blood_type_Data" />
+
+    <TextView
+        android:id="@+id/Patient_label_Telephone_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/telephone_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Telephone_Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Civil_State_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Telephone_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/telephone_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Telephone_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Civil_State_Data" />
+
+    <TextView
+        android:id="@+id/Patient_label_Data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/address_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Telephone_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Address_Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/address_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Data" />
+
+    <TextView
+        android:id="@+id/Patient_Description_Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/other_signs_placeholder"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Address_Data" />
+
+    <Button
+        android:id="@+id/Update_Button_Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/update_placeholder"
+        android:backgroundTint="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Description_Data"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Description_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Description_Data" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

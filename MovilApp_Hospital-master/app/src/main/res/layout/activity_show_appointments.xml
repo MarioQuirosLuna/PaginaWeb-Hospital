@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcream"
+    tools:context=".Activities.ShowAppointmentsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image_Appointment"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_appointment"
+            tools:srcCompat="@drawable/ic_appointment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Patient_Identification_label_Appointment"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/identification_placeholder"
+        android:textColor="@color/cornflower"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Identification_Appointment_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction" />
+
+    <TextView
+        android:id="@+id/Patient_Identification_Appointment_a"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/identification_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_Identification_label_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction" />
+
+    <TextView
+        android:id="@+id/Patient_Name_label_Appointment"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/user_name_placeholder"
+        android:textColor="@color/cornflower"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Name_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Identification_label_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_Name_Appointment"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/user_name_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_Name_label_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Identification_Appointment_a" />
+
+    <TextView
+        android:id="@+id/clinic_name_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/clinic_name_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/clinic_name_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Name_label_Appointment" />
+
+    <TextView
+        android:id="@+id/clinic_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/date_time_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clinic_name_item_label"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Name_Appointment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/show_Appointments_Patient_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/backcream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clinic_name_item_label" />
+
+    <TextView
+        android:id="@+id/recycler_empty_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_data_placeholder"
+        android:textColor="#000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clinic_name_item_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

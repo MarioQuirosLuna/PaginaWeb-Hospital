@@ -1,0 +1,2 @@
+rootProject.name = "MovilApp_Hospital"
+include ':app'

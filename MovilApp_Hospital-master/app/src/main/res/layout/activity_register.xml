@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextAppearance.AppCompat.Display1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcream"
+    tools:context=".Activities.RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/progressAnimationRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/custom_progress"
+        android:background="@color/cornflower"
+        android:padding="5dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/Image_Data_Register"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logohospital"
+        tools:srcCompat="@drawable/ic_logohospital" />
+
+    <EditText
+        android:id="@+id/Patient_Identification_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/identification_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Name_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/cornflower"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/user_name_placeholder"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Identification_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Identification_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Identification_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Password_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/cornflower"
+        android:hint="@string/password_placeholder"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Name_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Name_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Name_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Age_Data_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/cornflower"
+        android:hint="@string/age_placeholder"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Blood_type_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Password_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Password_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Blood_type_Data_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/cornflower"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        android:hint="@string/blood_type_placeholder"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Password_Data_Register"
+        app:layout_constraintStart_toEndOf="@+id/Patient_Age_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Password_Data_Register" />
+
+    <Spinner
+        android:id="@+id/Patient_Civil_State_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded_border"
+        android:backgroundTint="@color/cornflower"
+        android:popupBackground="@color/cornflower"
+        android:prompt="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Blood_type_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Age_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Age_Data_Register">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/Patient_Telephone_Data_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/telephone_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Address_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Civil_State_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Civil_State_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Address_Data_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/province_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Civil_State_Data_Register"
+        app:layout_constraintStart_toEndOf="@+id/Patient_Telephone_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Civil_State_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Canton_Register_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/canton_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_District_Register_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Civil_State_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Telephone_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_District_Register_Register"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/district_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Civil_State_Data_Register"
+        app:layout_constraintStart_toEndOf="@+id/Patient_Canton_Register_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Address_Data_Register" />
+
+    <EditText
+        android:id="@+id/Patient_Description_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/other_signs_placeholder"
+        android:backgroundTint="@color/cornflower"
+        android:inputType="textLongMessage"
+        android:textColor="@color/black"
+        android:textColorHint="?attr/colorBackgroundFloating"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_District_Register_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_District_Register_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_District_Register_Register" />
+
+    <Button
+        android:id="@+id/Update_Button_Data_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/cornflower"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/registerBtn"
+        app:layout_constraintEnd_toEndOf="@+id/Patient_Description_Data_Register"
+        app:layout_constraintStart_toStartOf="@+id/Patient_Description_Data_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Description_Data_Register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

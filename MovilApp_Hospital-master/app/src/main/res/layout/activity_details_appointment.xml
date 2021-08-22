@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcream"
+    tools:context=".Activities.DetailsAppointmentActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image_Details_Appointment"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_appointment"
+            tools:srcCompat="@drawable/ic_appointment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Patient_label_Identification_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/identification_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Identification_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/Patient_Identification_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/identification_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Identification_Details_Appointment"/>
+
+    <TextView
+        android:id="@+id/Patient_label_Name_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/user_name_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Name_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Identification_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_Name_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/user_name_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Identification_Details_Appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Name_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_label_DoctorCode_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/doctor_code_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_DoctorCode_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Name_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_DoctorCode_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/doctor_code_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_DoctorCode_Details_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_Name_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_label_DoctorName_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/doctor_name_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_DoctorName_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_DoctorCode_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_DoctorName_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/doctor_name_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_DoctorName_Details_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_DoctorCode_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_label_ClinicName_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/clinic_name_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_DoctorName_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_ClinicName_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_ClinicName_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/clinic_name_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_DoctorName_Details_Appointment"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_ClinicName_Details_Appointment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Patient_label_DateTime_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/date_time_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_DateTime_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_ClinicName_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_DateTime_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/date_time_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_DateTime_Details_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_ClinicName_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_label_Speciality_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/speciality_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toStartOf="@+id/Patient_Speciality_Details_Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_DateTime_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_Speciality_Details_Appointment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/speciality_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patient_label_Speciality_Details_Appointment"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_DateTime_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_label_Diagnosis_Details_Appointment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/diagnosis_placeholder"
+        android:textColor="@color/cornflower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Speciality_Details_Appointment" />
+
+    <TextView
+        android:id="@+id/Patient_Diagnosis_Details_Appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/diagnosis_placeholder"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Patient_label_Diagnosis_Details_Appointment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
