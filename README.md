@@ -35,7 +35,7 @@ Modulo Alergias
 
 Login
 
-![login1](https://user-images.githubusercontent.com/37676736/130338372-2e7f0a33-b95e-47de-95a5-685dfccf6069.png)
+![login1](https://user-images.githubusercontent.com/37676736/143904560-a350984e-b96a-4b0e-885f-eaa5bc57e419.jpg)
 
 Inicio
 
