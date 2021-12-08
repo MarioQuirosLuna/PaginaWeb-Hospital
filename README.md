@@ -1,6 +1,8 @@
 # PaginaWeb-Hospital
 Tercer proyecto del curso Lenguajes para aplicaciones comerciales de la carrera de Informatica Empresarial de la UCR.
 
+![Img preview](https://res.cloudinary.com/dusx4zdpz/image/upload/v1638990442/portfolio/portfolio/Hospital_cmxmpd.png)
+
 App Movil: MVA, Java, Android.
 Api: NetCore5, C#.
 Web App: MVC NetCore5, C#, Html, Css, Javascript, Razor, Bootstrap.
