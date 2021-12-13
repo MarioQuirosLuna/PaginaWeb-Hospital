@@ -7,6 +7,8 @@ App Movil: MVA, Java, Android.
 Api: NetCore5, C#.
 Web App: MVC NetCore5, C#, Html, Css, Javascript, Razor, Bootstrap.
 
+Contribución con una compañera de curso: Isabel Portuguez Calderón 
+
 Especificaciones: [Proyecto 3 - Lenguajes para aplicaciones comerciales 2-2021.pdf](https://github.com/MarioQuirosLuna/PaginaWeb-Hospital/files/7026399/Proyecto.3.-.Lenguajes.para.aplicaciones.comerciales.2-2021.pdf)
 
 **** Movil ****
